@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Calculator</title>
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="content">
+            <form action="" method="POST" onsubmit="return false">
+                <label for="bill">total bill:</label><br>
+                <input type="number" name="bill" class="bill" placeholder="Total Bill" required><br>
+                <label for="service">level of service:</label><br>
+                <select name="service" class="service" required>
+                <option value="-1">[rate service]</option>
+                <option value="1">excellent</option>
+                <option value="2">very good</option>
+                <option value="3">good</option>
+                <option value="4">poor</option>
+            </select><br>
+                <label for="severs">number of servers:</label><br>
+                <input type="number" name="servers" class="server" placeholder="No. Of Servers"><br>
+                <hr>
+                <div class="result">
+                    <span>tip </span> <span class="write"></span>
+                    <hr>
+                </div>
+                <input type="button" value="calculate" name="btn" class="btn cal" onclick=" logg()">
+                <span class="clear"><input type="button"  value="clear" class="btn cls" onclick="refresh()"></span>
+
+            </form>
+
+
+
+        </div>
+    </div>
+    </div>
+    <script class="js" src="script.js"></script>
+</body>
+
+</html>
